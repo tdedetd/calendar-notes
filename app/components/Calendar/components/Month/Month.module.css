@@ -1,0 +1,14 @@
+.monthTitle {
+  text-align: center;
+  padding: 5px;
+}
+
+.daysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.dayCell {
+  text-align: center;
+  padding: 5px;
+}
