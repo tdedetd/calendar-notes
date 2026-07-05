@@ -1,8 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const initialState: { value: string | null } = {
-  value: null,
-}
+const initialState = null as string | null;
 
 const selectedDateSlice = createSlice({
   name: 'selectedDate',
@@ -12,9 +10,7 @@ const selectedDateSlice = createSlice({
       prepare: (date: Date) => ({
         payload: date.toISOString(),
       }),
-      reducer: (state, action: PayloadAction<string>) => {
-        state.value = action.payload;
-      },
+      reducer: (_, action: PayloadAction<string>) => action.payload,
     }
   },
 });

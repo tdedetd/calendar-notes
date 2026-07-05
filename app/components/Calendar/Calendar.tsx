@@ -8,8 +8,8 @@ import styles from './Calendar.module.css';
 import { next, prev } from '@/app/store/slices/selected-month-slice';
 
 export function Calendar(): JSX.Element {
-  const selectedDateString = useTypedSelector((state) => state.selectedDate.value);
-  const selectedMonth = useTypedSelector(({ selectedMonth }) => selectedMonth.value);
+  const selectedDateString = useTypedSelector((state) => state.selectedDate);
+  const selectedMonth = useTypedSelector(({ selectedMonth }) => selectedMonth);
 
   const dispatch = useTypedDispatch();
 
