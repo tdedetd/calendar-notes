@@ -1,0 +1,12 @@
+.dayCell {
+  text-align: center;
+  padding: 5px;
+}
+
+.dayCellDisabled {
+  color: var(--disabled);
+}
+
+.dayCellWeekend {
+  color: var(--error);
+}
