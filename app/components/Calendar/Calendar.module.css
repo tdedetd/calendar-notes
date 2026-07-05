@@ -1,0 +1,9 @@
+.monthSelectorContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.monthSelectorButton {
+  padding: 10px;
+  cursor: pointer;
+}

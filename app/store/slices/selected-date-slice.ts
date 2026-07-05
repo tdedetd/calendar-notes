@@ -4,7 +4,7 @@ const initialState: { value: string | null } = {
   value: null,
 }
 
-export const selectedDateSlice = createSlice({
+const selectedDateSlice = createSlice({
   name: 'selectedDate',
   initialState,
   reducers: {

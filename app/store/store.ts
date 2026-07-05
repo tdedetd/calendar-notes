@@ -1,10 +1,12 @@
 import { configureStore, Store } from '@reduxjs/toolkit';
 import { selectedDateReducer } from './slices/selected-date-slice';
+import { selectedMonthReducer } from './slices/selected-month-slice';
 
 export function makeStore() {
   return configureStore({
     reducer: {
       selectedDate: selectedDateReducer,
+      selectedMonth: selectedMonthReducer,
     },
   });
 }
